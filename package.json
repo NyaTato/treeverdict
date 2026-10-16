@@ -9,7 +9,7 @@
     "node": ">=20"
   },
   "bin": {
-    "treeverdict": "./dist/cli.js"
+    "treeverdict": "dist/cli.js"
   },
   "files": [
     "dist",
