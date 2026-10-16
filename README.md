@@ -11,13 +11,13 @@
 Requires Node.js ≥ 20. Zero runtime dependencies.
 
 ```sh
-npm install -g treeverdict
+npm install -g https://github.com/NyaTato/treeverdict/releases/download/v0.1.0/treeverdict-0.1.0.tgz
 treeverdict init --yes
 treeverdict check
 treeverdict status
 ```
 
-Until npm publication, install from the GitHub release tarball linked in the [releases page](https://github.com/NyaTato/treeverdict/releases), or build from source with `npm ci && npm run build` and use `node dist/cli.js`.
+The release tarball install was tested from the public URL. The npm registry package is not published yet. You can also build from source with `npm ci && npm run build` and use `node dist/cli.js`.
 
 ## Why treeverdict alongside existing tools — one concrete gap (observed 2026-10-16)
 
