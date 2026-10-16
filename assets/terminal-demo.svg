@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" role="img" aria-labelledby="title desc">
+  <title id="title">treeverdict demo</title>
+  <desc id="desc">A green check passes, an edit makes the receipt stale, and a new check passes on the new tree.</desc>
+  <rect width="960" height="430" rx="18" fill="#10151f"/>
+  <rect width="960" height="48" rx="18" fill="#212a38"/>
+  <rect y="30" width="960" height="18" fill="#212a38"/>
+  <circle cx="27" cy="24" r="7" fill="#f46a68"/><circle cx="49" cy="24" r="7" fill="#f4be4f"/><circle cx="71" cy="24" r="7" fill="#62c65b"/>
+  <text x="480" y="30" text-anchor="middle" fill="#c9d5e5" font-family="Consolas, Menlo, monospace" font-size="15">treeverdict — demo</text>
+  <g font-family="Consolas, Menlo, monospace" font-size="19">
+    <text x="34" y="91" fill="#c9d5e5">$ treeverdict check</text>
+    <text x="34" y="126" fill="#65dd91">PASS</text><text x="101" y="126" fill="#aebbd0">tree c3fbe90a5578… · passed=1 failed=0</text>
+    <text x="34" y="174" fill="#c9d5e5">$ treeverdict status</text>
+    <text x="34" y="209" fill="#65dd91">PASS</text><text x="101" y="209" fill="#aebbd0">tree matches receipt</text>
+    <text x="34" y="257" fill="#c9d5e5">$ echo 'export function discount…' &gt;&gt; src/cart.js</text>
+    <text x="34" y="305" fill="#c9d5e5">$ treeverdict status</text>
+    <text x="34" y="340" fill="#ffbf5f">STALE</text><text x="113" y="340" fill="#aebbd0">tree changed: c3fbe90a5578… → 74c11537200d…</text>
+    <text x="34" y="389" fill="#c9d5e5">$ treeverdict check</text>
+    <text x="263" y="389" fill="#65dd91">PASS</text><text x="330" y="389" fill="#aebbd0">on the new tree</text>
+  </g>
+</svg>

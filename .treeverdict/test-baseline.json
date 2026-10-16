@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-16T15:32:11.757Z",
+  "updatedAt": "2026-10-16T15:32:11.757Z",
+  "updateReason": "Reviewed test changes for initial 0.1.0 release",
+  "files": [
+    {
+      "path": "test/integration.test.mjs",
+      "sha256": "08244b86ede4d126c4bb5a2546675c89563d3b2024d06d3c8bfb157dd3d6b2fc",
+      "bytes": 7826
+    },
+    {
+      "path": "test/unit.test.mjs",
+      "sha256": "a461615b9d62f5dc59d65dca91b260107e0562874e3b4dec9c44cd080c23a925",
+      "bytes": 5335
+    }
+  ]
+}

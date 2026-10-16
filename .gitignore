@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.tgz
+.treeverdict/receipts/
+.treeverdict/benchmark/
+.treeverdict/demo-log.txt

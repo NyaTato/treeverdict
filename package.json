@@ -1,0 +1,42 @@
+{
+  "name": "treeverdict",
+  "version": "0.1.0",
+  "description": "Independent verifier: prove the exact code tree that passed your tests.",
+  "license": "MIT",
+  "author": "NyaTato",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "treeverdict": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "npm run build && node --test test/unit.test.mjs test/integration.test.mjs",
+    "test:raw": "node --test test/unit.test.mjs test/integration.test.mjs",
+    "benchmark": "npm run build && node benchmark/run.mjs",
+    "demo": "npm run build && node demo/run-demo.mjs",
+    "prepack": "npm run build",
+    "smoke": "npm run build && node dist/cli.js --help && node scripts/smoke-pack.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.7.0",
+    "typescript": "^5.6.2"
+  },
+  "keywords": [
+    "verify",
+    "testing",
+    "provenance",
+    "ci",
+    "coding-agents"
+  ]
+}

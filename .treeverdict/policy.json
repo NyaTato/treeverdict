@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-16T15:06:18.613Z",
+  "commands": [
+    {
+      "id": "npm-test",
+      "argv": [
+        "npm",
+        "test",
+        "--silent"
+      ],
+      "timeoutMs": 300000
+    }
+  ],
+  "exclude": [
+    ".treeverdict/receipts",
+    ".treeverdict/benchmark",
+    ".treeverdict/demo-log.txt",
+    ".git",
+    "node_modules",
+    "dist",
+    "build",
+    "out",
+    ".next",
+    "coverage",
+    ".nyc_output",
+    ".turbo",
+    ".parcel-cache",
+    ".vite",
+    "__pycache__",
+    ".pytest_cache",
+    "target",
+    ".tox",
+    ".venv",
+    "venv",
+    "logs",
+    "*.log",
+    ".DS_Store",
+    "Thumbs.db"
+  ],
+  "includeUntracked": true,
+  "ignoredPolicyNote": "Fingerprint includes tracked + untracked + deleted files, plus ignored files EXCEPT: .treeverdict/receipts (own receipts), .git, node_modules, and standard cache/build outputs (dist, build, coverage, .next, etc. — see policy exclude list). All other ignored files (e.g. .env, *.local.js) ARE hashed: an ignored file that code loads is still code. To exclude anything else, add it to `exclude` explicitly; that changes the policy hash and STALEs old receipts."
+}
