@@ -1,5 +1,7 @@
 # treeverdict
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 **Coding agents say "done". treeverdict proves the exact code that passed.**
 
 ![Terminal demo: a PASS becomes STALE after an edit, then PASS on the new tree](assets/terminal-demo.svg)
@@ -51,6 +53,8 @@ $ echo '…' >> src/cart.js     # agent "finishes the job" after green…
 $ treeverdict status          # STALE — old green no longer vouches for new code
 $ treeverdict check           # PASS on the NEW tree, with a NEW receipt
 ```
+
+Watch the 15-second launch film: [English](https://github.com/NyaTato/treeverdict/releases/download/v0.1.0/treeverdict-launch-en-1080x1920.mp4) · [中文](https://github.com/NyaTato/treeverdict/releases/download/v0.1.0/treeverdict-launch-zh-1080x1920.mp4). Both cuts are release assets; the in-repo visual above is SVG. [Demo notes](docs/DEMO-15s.md).
 
 ## Exact limitations (read before trusting it)
 
@@ -129,7 +133,7 @@ demo/run-demo.mjs  repeatable end-to-end transcript + log
 | ignored-runtime-input | edit ONLY an ignored runtime file (`config.local.js` 42→7) after green; real `node --test` then fails | STALE |
 
 ```sh
-npm run benchmark   # 20/20 in ~10s; report: .treeverdict/benchmark/results.json
+npm run benchmark   # 20/20; ~14 s observed on Windows/Node 24 (timing is machine-dependent)
 ```
 
 The `ignored-runtime-input` case is the first-party cover for the concrete gap
